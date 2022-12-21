@@ -29,6 +29,14 @@ rosrun rs_to_velodyne rs_to_velodyne XYZI XYZIR
 ``` 
 The output point clouds are **XYZIR** point cloud `/velodyne_points` in Velodyne's format.
 
+### 3. Roslaunch
+
+A launch file is available. It can be run as follow :
+
+```
+roslaunch rs_to_velodyne rs_to_velodyne.launch 
+```
+
 
 ## Subscribes
 `/rslidar_points`: sensor_msgs.PointCloud2, from Robosense LiDAR.

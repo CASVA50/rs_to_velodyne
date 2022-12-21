@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="virtual_camera_broadcaster" args="0 0 0 0 0 0 ZOE2UTBM/velodyne velodyne 10" />
+
+    <node pkg="rs_to_velodyne" type="rs_to_velodyne" name="rs_to_velodyne" output="screen" args="XYZI XYZIR"/>
+
+</launch>
